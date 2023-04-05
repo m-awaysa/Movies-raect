@@ -1,0 +1,5 @@
+.episode_vote_Count:hover::before{
+ content: 'Vote Count: ';
+ height: 10px;
+ width: 10px;
+}

@@ -1,0 +1,12 @@
+.break_bar_no_border{
+    background-color: #28282d;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .content__title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 28px;
+    margin: 20px 0 5px;
+  }

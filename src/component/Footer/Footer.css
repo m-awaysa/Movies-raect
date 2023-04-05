@@ -1,0 +1,112 @@
+footer.footer {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #222222, #222222);
+    border-top: 1px solid rgba(210, 201, 255, .1);
+}
+
+.footer__logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100px;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1
+}
+
+.footer__logo img {
+    width: 100%;
+    max-width: 110px;
+    display: block
+}
+
+a {
+text-decoration: none;
+}
+
+.footer__copyright {
+    display: inline-block;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, .3)
+}
+
+.footer__copyright a {
+    color: rgba(255, 255, 255, .3)
+}
+
+.footer__copyright a:hover {
+    color: #ffc72a
+}
+
+.footer__back:hover {
+    color: #fff
+}
+.footer_link{
+    color: #fff;
+}
+.footer_link:hover{
+    color: rgb(92, 95, 95);
+}
+
+@media(min-width: 576px) {
+    .footer__logo {
+        width: 110px
+    }
+}
+
+@media(min-width: 768px) {
+    .footer__content {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+        height: 80px
+    }
+
+
+    .footer__copyright {
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        margin-top: 0;
+        margin-right: 20px
+    }
+
+    .footer__back {
+        position: absolute;
+        bottom: 50%;
+        margin-bottom: -20px
+    }
+}
+
+@media(min-width: 1200px) {
+    .footer__copyright {
+        margin-right: 40px
+    }
+}

@@ -1,0 +1,42 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .breadcrumb__item {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    transition: 0.4s ease;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .breadcrumb__item:hover {
+    color: #fff;
+  }
+  .breadcrumb__item--active {
+    cursor: default;
+    margin-right: 0;
+  }
+
+  .breadcrumb__item--active:hover {
+    color: rgba(255,255,255,0.5);
+  }
+  .breadcrumb a {
+    color: rgba(255,255,255,0.5);
+  }
+  .breadcrumb a:hover {
+    color: #ff55a5;
+  }
+  @media (min-width: 768px) {
+    .breadcrumb {
+      margin-top: 0;
+    }
+    .breadcrumb__item {
+      font-size: 15px;
+    }
+  }

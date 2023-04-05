@@ -1,0 +1,138 @@
+.section {
+    padding: 40px 0;
+    position: relative;
+}
+
+.details {
+    position: relative;
+    margin-top: 70px;
+}
+
+.details__bg {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 400px;
+    z-index: 1;
+    opacity: 0.07;
+}
+
+.details:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    z-index: 2;
+    background: -moz-linear-gradient(top, rgba(43, 43, 49, 0) 0%, #2b2b31 100%);
+    background: -webkit-linear-gradient(top, rgba(43, 43, 49, 0) 0%, #2b2b31 100%);
+    background: linear-gradient(to bottom, rgba(43, 43, 49, 0) 0%, #2b2b31 100%);
+}
+
+.details .container {
+    position: relative;
+    z-index: 3;
+}
+
+.details__title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.details__title b {
+    font-weight: 700;
+}
+
+.details__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+.b-description_readmore_button {
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.b-description_readmore_button:before {
+    content: '...';
+    font-family: "Ionicons";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    line-height: 24px;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.b-description_readmore_button:hover:before,
+.b-description_readmore_button.b-description_readmore_button_active:before {
+    color: #ff55a5;
+}
+
+.movie_card__description_read {
+    height: 80px !important;
+    overflow: hidden;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    .details__title {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .details {
+        margin-top: 90px;
+    }
+
+    .details__title {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .details__title {
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .details {
+        padding: 70px 0;
+    }
+
+    .details__title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+}

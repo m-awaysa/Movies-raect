@@ -1,0 +1,15 @@
+.gradient-custom-2 {
+    background-image: url('/public/img/home/black_galaxy.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media(max-width:450px) {
+    .person_info {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+}

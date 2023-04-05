@@ -1,0 +1,8 @@
+.bi-trash-fill {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.bi-trash-fill:hover {
+    transform: scale(1.2);
+}
